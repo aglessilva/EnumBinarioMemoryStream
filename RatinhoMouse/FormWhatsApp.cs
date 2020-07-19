@@ -37,10 +37,10 @@ namespace RatinhoMouse
             perfil = lst.Take(3).ToList();
 
             // CARREGAR DOCUMENTO PDF NA MEMORIA E ABRI
-             string caminho = @"C:\Tobamento DTI\70657230000786_18.pdf";
-             byte[] doc = File.ReadAllBytes(caminho);
-             MemoryStream ms = new MemoryStream(doc);
-             pdfViewer1.LoadFromStream(ms);
+             //string caminho = @"C:\Tobamento DTI\70657230000786_18.pdf";
+             //byte[] doc = File.ReadAllBytes(caminho);
+             //MemoryStream ms = new MemoryStream(doc);
+             //pdfViewer1.LoadFromStream(ms);
 
             // CARREGAR IMAGEM NA MEMORIA E ABIR
             string caminhoImage = @"C:\Users\x194262\Desktop\FotoApto\way-orquidario.jpg";
@@ -55,6 +55,12 @@ namespace RatinhoMouse
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             groupBox1.Tag = (Perfil)comboBox1.SelectedItem;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2( textBox1);
+            form.Show();
         }
     }
 

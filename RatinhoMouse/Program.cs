@@ -16,7 +16,7 @@ namespace RatinhoMouse
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormWhatsApp());
+            Application.Run(new Form3());
         }
     }
 }
